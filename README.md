@@ -1,2 +1,8 @@
-# Modeling-Bayesian-Framework-in-STAN
-Utilizing Bayesian Inference, this project analyzes crime data from the Chicago Police Department to estimate the difference in arrest rates between domestic and non-domestic crimes. It applies a Stan model to draw conclusions from the posterior distribution and validate the results, providing valuable insights into crime patterns and arrests.
+# Bayesian Inference To Estimate Difference in Arrest
+In this project, we delve into the rich dataset provided by the Chicago Police Department, encompassing crime incidents in the City of Chicago from 2001 to 2020. Our focal point revolves around understanding the differences in arrest rates between domestic and non-domestic crimes, as indicated by the 'Arrest' and 'Domestic' columns.
+
+To derive statistical insights from the data, we employ Bayesian Inference. Considering the nature of domestic and non-domestic crimes, we model the data with binomial distributions, enabling us to examine posterior distributions and compare the two scenarios. Utilizing Stan, a powerful probabilistic programming language, we conduct Hamiltonian Monte Carlo sampling to approximate posterior distributions.
+
+In the Stan model, we utilize conjugate priors with beta distributions for p_dom and p_nodom to draw comparisons and make robust inferences. Following the Bayesian model, we evaluate and validate our results through effective sample size and trace plots, ensuring the reliability of our conclusions.
+
+The final analysis showcases a significant difference between arrest rates for domestic and non-domestic crimes. With 95% confidence intervals for p_dom and p_nodom, we establish that the arrest rates for domestic crimes lie between 0.1945 and 0.1965, while for non-domestic crimes, it is between 0.2847 and 0.2853. This work sheds light on crime patterns, aiding policymakers and law enforcement agencies in making informed decisions to improve public safety and address domestic violence effectively.
